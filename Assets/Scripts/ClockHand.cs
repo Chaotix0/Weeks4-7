@@ -6,7 +6,7 @@ public class ClockHand : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip clip;
-    bool hour;
+    public bool hour;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,8 @@ public class ClockHand : MonoBehaviour
     void Update()
     {
         transform.Rotate(0, 0, -5 * Time.deltaTime);
-        if (transform.rotation.z >= -30) {
+        //Debug.Log();
+        if (transform.eulerAngles.z <= -30) {
             hour = true;
         }
         //Vector3 rot = transform.eulerAngles;
@@ -28,9 +29,8 @@ public class ClockHand : MonoBehaviour
         //play audio
         //audioSource.Play();
         if (hour == true) {
-            {
-                audioSource.PlayOneShot(clip);
-            }
+            audioSource.PlayOneShot(clip);
+            
         }
     }
 }
