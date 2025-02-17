@@ -26,6 +26,7 @@ public class Balloon : MonoBehaviour
         t += Time.deltaTime;
         transform.position += transform.up * speed * Time.deltaTime;
         transform.localScale = Vector2.one * curve.Evaluate(t);
+        //destroys balloon after 7 seconds
         if (t >= 7) 
         {
             Destroy(self);

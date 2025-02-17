@@ -26,6 +26,7 @@ public class LerpDemo : MonoBehaviour
         t += Time.deltaTime / 10;
         if (t >= 1)
         {
+            //puck destroys itself after animationCurve is done
             Destroy(self);
         }
     }
