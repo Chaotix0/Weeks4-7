@@ -10,11 +10,12 @@ public class LerpDemo : MonoBehaviour
     public AnimationCurve curve;
     public Transform start;
     public Transform end;
+    public GameObject self;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        t = 0; 
     }
 
     // Update is called once per frame
@@ -23,6 +24,9 @@ public class LerpDemo : MonoBehaviour
         transform.position = Vector2.Lerp(start.position, end.position, curve.Evaluate(t));
         //gets the time and runs at 60fps
         t += Time.deltaTime / 10;
-        t = t % 1;
+        if (t >= 1)
+        {
+            Destroy(self);
+        }
     }
 }

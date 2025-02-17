@@ -9,12 +9,12 @@ public class Balloon : MonoBehaviour
     public Transform balloon;
     public AnimationCurve curve;
     float t;
+    public GameObject self;
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -26,5 +26,9 @@ public class Balloon : MonoBehaviour
         t += Time.deltaTime;
         transform.position += transform.up * speed * Time.deltaTime;
         transform.localScale = Vector2.one * curve.Evaluate(t);
+        if (t >= 7) 
+        {
+            Destroy(self);
+        }
     }
 }
