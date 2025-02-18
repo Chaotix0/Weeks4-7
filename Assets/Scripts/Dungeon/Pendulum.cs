@@ -18,6 +18,6 @@ public class Pendulum : MonoBehaviour
 
     public void Trap()
     {
-        Debug.Log("wa");
+        Debug.Log("Pendulum");
     }
 }

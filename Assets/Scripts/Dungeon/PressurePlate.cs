@@ -12,7 +12,7 @@ public class PressurePlate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        trapObj = this.gameObject.transform.parent.gameObject.transform.GetChild(1).gameObject;
+        trapObj = this.gameObject.transform.parent.gameObject.transform.GetChild(0).gameObject;
     }
 
     // Update is called once per frame

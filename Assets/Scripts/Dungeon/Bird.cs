@@ -18,6 +18,6 @@ public class Bird : MonoBehaviour
 
     public void Trap()
     {
-        Debug.Log("wa");
+        Debug.Log("Bird");
     }
 }

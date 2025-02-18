@@ -18,6 +18,6 @@ public class BigGear : MonoBehaviour
 
     public void Trap()
     {
-        Debug.Log("wa");
+        Debug.Log("BigGear");
     }
 }
