@@ -4,18 +4,6 @@ using UnityEngine;
 
 public class Pendulum : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Trap()
     {
         Debug.Log("Pendulum");

@@ -9,13 +9,11 @@ public class PressurePlate : MonoBehaviour
     public string trap;
     GameObject trapObj;
 
-    // Start is called before the first frame update
     void Start()
     {
         trapObj = this.gameObject.transform.parent.gameObject.transform.GetChild(0).gameObject;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Vector2.Distance(player.transform.position, transform.position) < 1f)

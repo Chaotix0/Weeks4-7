@@ -9,12 +9,6 @@ public class Spider : MonoBehaviour
     public float speed;
     public float viewDistance;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
